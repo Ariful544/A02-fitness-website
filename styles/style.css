@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+/* font-family: "Inter", sans-serif;  */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+/* font-family: "Dancing Script", cursive;  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+/* default styles */
+:root {
+  --cl-primary: #fff;
+  --cl-secondary: rgba(255, 255, 255, 0.5);
+  --btn-primary: #e6533c;
+  --border: 1px solid red;
+}
+.container {
+  max-width: 1230px;
+  min-height: 100dvh;
+  margin: 0 auto;
+}
+.btn-primary,
+.btn-dark {
+  background: var(--btn-primary);
+  padding: 1rem 2.5rem;
+  border-radius: 40px;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: 600;
+  border: 1px solid var(--btn-primary);
+}
+.btn-primary:hover,
+.btn-dark:hover {
+  background: #f23e22;
+  border: 1px solid #f23e22;
+  transition: 0.2s;
+}
+/* header style */
+.header {
+  max-width: 1536px;
+  background: linear-gradient(
+    180deg,
+    rgb(17, 17, 17),
+    rgba(119, 119, 119, 0) 100%
+  );
+}
+.header .navbar {
+  min-height: 50px;
+  padding-top: 55px;
+  display: flex;
+  justify-content: space-between;
+}
+.header .brand {
+  color: var(--btn-primary);
+  font-size: 2.25rem;
+  font-style: italic;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+.nav-links ul {
+  display: flex;
+  gap: 3rem;
+  padding: 15px 0;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.nav-links ul li {
+  list-style-type: none;
+}
+.nav-links ul li a {
+  padding: 10px 20px;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 4px;
+  font-size: 1.15rem;
+  border-radius: 40px;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.nav-links ul li a:hover {
+  background: var(--btn-primary);
+  transition: 0.2s;
+}
+.active {
+  background-color: #e6533c;
+}
+.navbar .fa {
+  display: none;
+}
+/* hero style start here */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 120px;
+}
+.hero .hero-content {
+  margin-top: 6rem;
+}
+.hero .hero-content > h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 120%;
+}
+.hero .hero-content h1 .cursive {
+  font-family: "Dancing Script", cursive;
+  font-size: 7rem;
+  font-weight: 400;
+}
+.hero .hero-content > p {
+  color: var(--cl-secondary);
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0.5px;
+  margin: 28px 0;
+}
+.btn-dark {
+  background: transparent;
+  margin-left: 14px;
+  border: 1px solid var(--cl-secondary);
+}
+.hero-banner {
+  position: relative;
+}
+.hero-banner img{
+    margin-left: 100px;
+}
+.card1,
+.card2 {
+  width: 206px;
+  height: 96px;
+  border-radius: 12px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  border: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+}
+.card1 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 14px 15px;
+  text-align: left;
+  position: absolute;
+  bottom: 180px;
+  left: 0px;
+  
+}
+.card1 .circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--btn-primary);
+}
+.card1 .count1 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: 0.3px;
+  margin-bottom: 8px;
+}
+.desc {
+  color: rgba(239, 237, 232, 0.65);
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+.card2 {
+    text-align: left;
+    padding: 14px 15px;
+    position: absolute;
+    top: 130px;
+    right: 10px;  
+  }
+.card2 .count2{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
