@@ -401,6 +401,7 @@ h3 {
   min-height: 480px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap:50px;
   padding-top: 52px;
 }
 .calculator-chart > h4 {
@@ -503,7 +504,8 @@ select {
   .habits,
   .run .run-image,
   .exercises,
-  form {
+  form,
+  .our-team {
     width: 100%;
   }
   .header .navbar {
@@ -520,7 +522,8 @@ select {
   .hero,
   .habits-card,
   .run,
-  .calculator-container {
+  .calculator-container,
+  .team-collage {
     grid-template-columns: 1fr;
     padding: 20px;
   }
@@ -569,5 +572,8 @@ select {
   }
   .calculator-text {
     margin: 50px auto;
+  }
+  .team-collage-container{
+    margin: 0 20px;
   }
 }
