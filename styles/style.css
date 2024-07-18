@@ -36,6 +36,7 @@ h3 {
   padding: 1rem 2.5rem;
   border-radius: 40px;
   color: #fff;
+  text-align: center;
   font-size: 18px;
   cursor: pointer;
   font-weight: 600;
@@ -321,7 +322,7 @@ h3 {
   left: 1.8rem;
 }
 .collage1 .img3 {
-  width: 350px;
+  width: 348px;
   height: 250px;
   color: rgb(255, 255, 255);
   background: url(../images/exercise3.png);
@@ -369,7 +370,7 @@ h3 {
   position: relative;
 }
 .collage2 .img6 {
-  width: 405px;
+  width: 400px;
   height: 250px;
   color: rgb(255, 255, 255);
   background: url(../images/exercise6.jpg);
@@ -380,12 +381,129 @@ h3 {
   background-blend-mode: overlay;
   position: relative;
 }
+.calculator-text {
+  margin: 78px 0px 0px 150px;
+}
+.calculator-text > p {
+  color: var(--cl-secondary);
+  font-size: 0.9rem;
+  margin-top: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+}
+/* calculator section style start here */
+.calculator {
+  background: rgba(34, 34, 34, 0.8);
+  margin-top: 5rem;
+}
+.calculator-container {
+  min-height: 480px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 52px;
+}
+.calculator-chart > h4 {
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin-bottom: 52px;
+}
+table {
+  width: 350px;
+  height: 216px;
+}
+table,
+th,
+td {
+  border: 1px solid var(--cl-secondary);
+  border-collapse: collapse;
+  text-align: left;
+  padding: 10px 20px;
+}
+.calculate-form > p {
+  color: var(--cl-secondary);
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  margin: 15px 0 32px 0;
+}
+form {
+  width: 600px;
+}
+.form-group {
+  width: 100%;
+}
+input[type="text"],
+.sex,
+.factor {
+  padding: 15px 40px;
+  margin: 5px 5px;
+  border: none;
+  background: rgba(255, 255, 255, 0.4);
+  width: 45%;
+  border-radius: 8px;
+}
+.factor {
+  width: 93%;
+  margin-bottom: 30px;
+}
+input[type="text"]::placeholder,
+select {
+  color: rgba(255, 255, 255, 0.6);
+}
+/* our-team section style here */
+.our-team {
+  margin-bottom: 88px;
+}
+.our-team-content {
+  text-align: center;
+  margin: 90px 60px;
+}
+.our-team-content > p {
+  color: var(--cl-secondary);
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  margin: 15px 0 32px 0;
+}
+.team-collage-container {
+  padding: 20px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.team-collage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+}
+.team-member {
+  position: relative;
+}
+.team-member img {
+  width: 384px;
+  height: 270px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.team-member-title {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+.team-name {
+  font-size: 1.25rem;
+}
+.team-title {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+}
 /* responsive media queries */
 @media screen and (max-width: 576px) {
   .header,
   .habits,
   .run .run-image,
-  .exercises {
+  .exercises,
+  form {
     width: 100%;
   }
   .header .navbar {
@@ -401,7 +519,8 @@ h3 {
   }
   .hero,
   .habits-card,
-  .run {
+  .run,
+  .calculator-container {
     grid-template-columns: 1fr;
     padding: 20px;
   }
@@ -434,17 +553,21 @@ h3 {
   .exercises {
     padding: 20px;
   }
-  .collage1 .img2,.collage2 .img5{
+  .collage1 .img2,
+  .collage2 .img5 {
     display: none;
   }
   .collage1 .img1 p,
   .collage1 .img3 p,
-  .collage2 .img6 p{
+  .collage2 .img6 p {
     font-size: 14px;
   }
   .collage2 .img4 > p {
     font-size: 14px;
     top: 2.5rem;
     left: 4rem;
+  }
+  .calculator-text {
+    margin: 50px auto;
   }
 }
