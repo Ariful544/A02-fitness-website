@@ -511,6 +511,7 @@ select {
 }
 .membership-plan {
   display: grid;
+  margin-left: 45px;
   gap: 20px;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -651,7 +652,7 @@ select {
   }
   .membership-plan,
   .footer-container {
-    padding: 0 80px;
+    padding: 0 60px;
   }
   .footer-container{
     gap: 70px;
