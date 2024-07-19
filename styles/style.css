@@ -603,6 +603,9 @@ select {
   text-decoration: none;
   color: var(--cl-secondary);
 }
+.get-started-links ul li a:hover{
+  text-decoration: underline;
+}
 .copyright{
   width: 1230px;
   margin: 0 auto;
@@ -648,7 +651,7 @@ select {
   }
   .membership-plan,
   .footer-container {
-    padding: 0 70px;
+    padding: 0 80px;
   }
   .footer-container{
     gap: 70px;
