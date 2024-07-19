@@ -14,8 +14,8 @@
         <!-- navbar section -->
         <nav class="navbar container">
             <h2 class="brand">Fitness</h2>
-            <div class="nav-links" id="NavLinks">
-                <i class="fa fa-x"></i>
+            <div class="nav-links" id="Navlinks">
+                <i class="fa fa-x" onclick="hideMenu()"></i>
                 <ul>
                     <li><a class="active" href="">Home</a></li>
                     <li><a href="">Service</a></li>
@@ -23,7 +23,7 @@
                     <li><a href="">About</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars"></i>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
         <!-- hero section -->
         <div class="hero container">
@@ -36,7 +36,7 @@
             </div>
             <div class="hero-banner">
                 <img src="./images/banner.png" alt="">
-                <i class="fa-solid fa-play"></i>
+                <i class="fa-solid fa-play" ></i>
                 <div class="card1">
                     <div class="circle"></div>
                     <div>
@@ -338,6 +338,16 @@
         </div>
         <p class="copyright">All right reserved @Fitness 2024</p>
     </footer>
+    <script>
+        const Navlinks= document.querySelector('#Navlinks');
+
+        function showMenu(){
+            Navlinks.style.right="0px";
+        }
+        function hideMenu(){
+            Navlinks.style.right="-200px";
+        }
+    </script>
 </body>
 
 </html> 
